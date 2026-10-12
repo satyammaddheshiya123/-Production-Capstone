@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ShopSphere — Capstone E-Commerce Storefront</title>
+<meta name="description" content="ShopSphere: vanilla JS storefront with simulated auth, catalog, cart, orders and admin CRUD.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@600;700&family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem('ss.theme')||'dark'}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#app">Skip to content</a>
+<header class="bar glass">
+  <a class="brand" href="#/shop">Shop<span>Sphere</span></a>
+  <nav id="nav" aria-label="Main"></nav>
+  <div class="tools">
+    <button class="icon" data-act="theme" aria-label="Toggle theme">◐</button>
+    <button class="icon" data-act="cart" aria-label="Open cart">🛒 <b id="count">0</b></button>
+  </div>
+</header>
+<main id="app" tabindex="-1"></main>
+<aside id="drawer" class="glass" aria-label="Shopping cart"></aside>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="js/data.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/store.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
